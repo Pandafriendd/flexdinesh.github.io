@@ -18,10 +18,7 @@ class App extends Component {
             <ParallaxBackground />
           </Browser>
           <LandingPage />
-          <AboutPage />
-          <PortfolioPage />
-          <ScrollTop />
-          <Footer />
+          
         </ThemeSwitcher>
       </div>
     );

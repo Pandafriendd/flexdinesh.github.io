@@ -14,16 +14,16 @@ const LandingPage = (props, context) => {
     <div style={{ backgroundColor: bgPrimary }} className="landing-page">
       <Nav />
       <main style={{ color: colorPrimary }}>
-        <BrowserNotes />
+        
         <div className="intro-wrapper">
-          <div className="intro-name">Hello, I'm Dinesh!</div>
+          <div className="intro-name">Hello, I'm Zhiyuan Li!</div>
           <div className="tagline">
-            Full Stack Dev | Open-Source Enthusiast | Blogger | Ninja
+            Cloud DevOps Engineer | Cloud Computing Enthusiast | Basketball Fan
           </div>
           <SocialIcons />
         </div>
       </main>
-      <ScrollToNext pageSelector=".about-page" />
+      
     </div>
   );
 };
