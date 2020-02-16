@@ -8,14 +8,16 @@ phases:
     commands:
       - echo Installing source NPM dependencies...
       - npm install
+
+      - echo Fixing node-sass...
+      - npm i --unsafe-perm node-sass
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling the Node.js code
+      - echo Compiling and testing the Node.js code...
       - npm run test
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo Build completed...
 
 artifacts:
   files:
