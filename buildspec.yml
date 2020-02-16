@@ -7,8 +7,8 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies and fixing node-sass...
-      - npm install 
-      - npm install --unsafe-perm node-sass
+      - npm install
+      - sudo npm install --unsafe-perm node-sass
   build:
     commands:
       - echo Compiling and testing the Node.js code...
@@ -22,8 +22,6 @@ artifacts:
     - .ebextensions/**/*
     - src/**/*
     - package.json
-    - package-lock.json
-    - yarn.lock
     - node_modules/**/*
     - public/**/*
     - config/**/*
